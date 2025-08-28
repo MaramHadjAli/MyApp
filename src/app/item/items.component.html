@@ -1,0 +1,9 @@
+<StackLayout>
+  <RadListView [items]="items" loadOnDemandMode="Auto" (loadMoreDataRequested)="loadMore()">
+    <ng-template let-item="item">
+      <StackLayout orientation="horizontal" padding="10">
+        <Label [text]="item" class="item-label"></Label>
+      </StackLayout>
+    </ng-template>
+  </RadListView>
+</StackLayout>
